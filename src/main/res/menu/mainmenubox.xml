@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/hometab"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu_home"
+        android:title="커뮤니티"
+        />
+    <item
+        android:id="@+id/searchclasstab"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu_search"
+        android:title="과외찾기"/>
+    <item
+        android:id="@+id/classrequesttab"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu_request"
+        android:title="과외문의">
+    </item>
+    <item
+        android:id="@+id/myclasstab"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu_class"
+        android:title="내 과외">
+    </item>
+    <item
+        android:id="@+id/mypagetab"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/menu_setting"
+        android:title="마이페이지">
+    </item>
+</menu>

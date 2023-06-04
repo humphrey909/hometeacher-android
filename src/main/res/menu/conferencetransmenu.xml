@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/videomovebtn"
+        app:showAsAction="withText"
+        android:title="영상보기"/>
+    <item
+        android:id="@+id/whiteboardmovebtn"
+        app:showAsAction="withText"
+        android:title="화이트보드"/>
+    <item
+        android:id="@+id/participantmovebtn"
+        app:showAsAction="withText"
+        android:title="참여자보기"/>
+
+</menu>

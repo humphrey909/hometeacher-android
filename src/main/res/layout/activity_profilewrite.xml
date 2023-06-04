@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Profilewrite">
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:id="@+id/toolbartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="프로필 수정" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaa"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nicnametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="닉네임" />
+        <EditText
+            android:id="@+id/nicnameedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="닉네임을 입력해주세요. (중복X)"
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/nicnameoverlapchktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="중복된 닉네임 입니다. "
+            android:textColor="@color/red"
+            />
+
+        <TextView
+            android:id="@+id/imgtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로필 사진"
+            android:layout_marginBottom="5dp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/imagesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"/>
+
+
+
+
+        <TextView
+            android:id="@+id/studentagetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학생의 연력/학년을 알려주세요."
+            android:layout_marginBottom="5dp"
+            />
+        <Spinner
+            android:id="@+id/studentagespinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinnerdesign"
+            android:spinnerMode="dialog"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/sexgrouptext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:text="성별"
+                android:layout_weight="1"
+                />
+            <RadioGroup
+                android:id="@+id/sexgroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/sex1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="남자"
+                    android:background="@drawable/joinradio"
+                    android:buttonTint="@color/greybtn2"
+                    android:layout_marginEnd="10dp"
+                    android:button="@null"
+                    android:gravity="center"/>
+                <RadioButton
+
+                    android:id="@+id/sex2"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:text="여자"
+                    android:background="@drawable/joinradio"
+                    android:buttonTint="@color/greybtn2"
+                    android:button="@null"
+                    android:gravity="center"/>
+            </RadioGroup>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/minpayguidelinetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최소 페이 (월 기준)"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/minpayguideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/inputborder"
+            />
+
+
+
+        <TextView
+            android:id="@+id/payguidelinereasontext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자세한 수업료 기준"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/payguidelinereason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:background="@drawable/inputborder"
+            android:inputType="textMultiLine" />
+
+            <TextView
+                android:id="@+id/charactertitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="성격"
+                android:layout_marginBottom="5dp"
+
+                />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/characterlistRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:orientation="vertical"/>
+        <TextView
+            android:id="@+id/subjecttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과외 가능 과목"
+            android:layout_marginBottom="5dp"
+
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/subjcetlistRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="vertical"/>
+
+
+
+        <TextView
+            android:id="@+id/schooltitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학교"
+            android:layout_marginBottom="5dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/schoollayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/schooledit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_weight="2"
+                android:background="@drawable/inputborder"
+                android:layout_marginEnd="10dp"
+                />
+            <Spinner
+                android:id="@+id/schoolchkspinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinnerdesign"
+                android:spinnerMode="dialog"
+                />
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/capmusareatitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="소속캠퍼스 지역"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/capmusareaedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/inputborder"
+            />
+
+        <TextView
+            android:id="@+id/schoolsubjecttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학과"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/schoolsubjectedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/inputborder"
+            />
+
+
+        <TextView
+            android:id="@+id/studentidtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학번"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/studentidedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/inputborder"
+            />
+
+
+        <TextView
+            android:id="@+id/onelineintroducetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="한줄 소개"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/onelineintroduceedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:background="@drawable/inputborder"
+            />
+
+        <TextView
+            android:id="@+id/maxpayguidelinetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="최대예산 (월 기준)"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/maxpayguideline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:background="@drawable/inputborder"
+            />
+
+        <TextView
+            android:id="@+id/availabletimetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과외 가능 요일/시간"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/availabletimeedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputborder"
+            />
+
+
+        <TextView
+            android:id="@+id/classdocumenttitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과목별 수업내용"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/classdocumentedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputborder"
+            />
+
+
+        <TextView
+            android:id="@+id/classstyletitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="과외 스타일"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/classstyleedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputborder"
+            />
+
+
+        <TextView
+            android:id="@+id/skillappealtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="실력 어필"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/skillappealedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputborder"
+            />
+
+        <TextView
+            android:id="@+id/forteachertalktitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="학생의 상황, 과외선생님께 바라는 것"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/forteachertalkedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="8"
+            android:minLines="6"
+            android:maxLines="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:background="@drawable/inputborder"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

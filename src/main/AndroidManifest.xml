@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.hometeacher">
+    <!-- camera, gallery -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- Request legacy Bluetooth permissions on older devices. -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!--
+ Needed only if your app looks for Bluetooth devices.
+         You must add an attribute to this permission, or declare the
+         ACCESS_FINE_LOCATION permission, depending on the results when you
+         check location usage in your app.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!--
+ Needed only if your app makes the device discoverable to Bluetooth
+         devices.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <!--
+ Needed only if your app communicates with already-paired Bluetooth
+         devices.
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:name=".shared.GlobalClass"
+        android:allowBackup="true"
+        android:appComponentFactory="whateverString"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HomeTeacher"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:appComponentFactory">
+        <activity
+            android:name=".PopupActivity"
+            android:exported="false"  android:theme="@style/DialogTheme"/>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="hometeacherpdf"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".MyclassVodview"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassVodlist"
+            android:exported="false" />
+        <activity
+            android:name=".DeviceTestPage"
+            android:exported="false" />
+        <activity
+            android:name=".ConferenceRoomPage"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyReviewList"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassReviewwrite"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassProblemCommentedit"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassProblemview"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassProblemwrite"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassProblemlist"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassSetting"
+            android:exported="false" />
+        <activity
+            android:name=".Myclassroomactivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassUseradd"
+            android:exported="false" />
+        <activity
+            android:name=".MyclassmakeroomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ClassRequestformactivity"
+            android:exported="false" />
+
+        <service android:name=".SocketService" />
+        <service android:name=".RestartService" />
+
+        <receiver
+            android:name=".AlarmRecever"
+            android:exported="false" />
+
+        <activity
+            android:name=".Classinquiryroomactivity"
+            android:exported="false" />
+        <activity
+            android:name=".Nboard.Commentedit"
+            android:exported="false" />
+        <activity
+            android:name=".Nboard.MyNboardList"
+            android:exported="false" />
+        <activity
+            android:name=".Nboard.Commentnestedactivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchBox.CurrentSearchpage"
+            android:exported="false" />
+        <activity
+            android:name=".ImgViewPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchBox.DetailSearchpage"
+            android:exported="false" />
+        <activity
+            android:name=".Nboard.Nboardwrite"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.media.action.ACTION_IMAGE_CAPTURE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <!-- <action android:name="android.intent.action.GET_CONTENT" /> -->
+                <!-- <data android:type="image/*" /> -->
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+                <!-- &lt;!&ndash; The OPENABLE category declares that the returned file is accessible -->
+                <!-- from a content provider that supports OpenableColumns -->
+                <!-- and ContentResolver.openFileDescriptor() &ndash;&gt; -->
+                <!-- <category android:name="android.intent.category.OPENABLE" /> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Nboard.Nboardview"
+            android:exported="false" />
+        <activity
+            android:name=".ImgbigsizeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.ChangeAccountinfo"
+            android:exported="false" />
+        <activity
+            android:name=".GradeGideline"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Accountsetview"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Profileview"
+            android:exported="false" />
+        <activity
+            android:name=".Alertpage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Agreepersonalinformation"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Agreetotermsofuse"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Pwchange_loginstate"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Pwchangepage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Pwsearchpage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Profilewrite"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Joinpage"
+            android:exported="false" />
+        <activity
+            android:name=".Profile.Loginpage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 이미지 크롭을 위한 activity -->
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

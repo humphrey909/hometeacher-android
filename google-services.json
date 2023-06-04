@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79834923082",
+    "project_id": "hometeacher2-af915",
+    "storage_bucket": "hometeacher2-af915.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79834923082:android:64253397207c395d0a66b3",
+        "android_client_info": {
+          "package_name": "com.example.hometeacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79834923082-q992s7c57is5987ab0mvg5hfm6p9qq9f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQZlGHNLKEBa7XGxh0z0Au91q3R4YakgQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79834923082-q992s7c57is5987ab0mvg5hfm6p9qq9f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:background="@drawable/btndesign4"
+    android:layout_margin="5dp"
+    >
+    <ImageView
+        android:id="@+id/imgView_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        />
+    <LinearLayout
+        android:id="@+id/profileitemLinear"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/nameinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3f3f3f"
+            android:textSize="20dp"
+            android:text="-"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            tools:ignore="HardcodedText" />
+        <TextView
+            android:id="@+id/schoolinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            />
+        <TextView
+            android:id="@+id/subjectinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:layout_weight="1"
+            android:gravity="start|center"
+            />
+
+    </LinearLayout>
+</LinearLayout>

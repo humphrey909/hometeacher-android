@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Joinpage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 찾기" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="가입한 이메일 주소를 입력해주세요."
+            />
+        <EditText
+            android:id="@+id/emailedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="example@hometeacher.com"
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            />
+        <TextView
+            android:id="@+id/emailchktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="존재하지 않는 유저입니다. "
+            android:textColor="@color/red"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/certifylinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/certifitext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인증번호 입력"
+                android:paddingEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/certifitimer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 03:00"
+                />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/certifiedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="인증번호를 입력해주세요."
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            />
+        <TextView
+            android:id="@+id/certifichktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인증번호가 맞지 않습니다."
+            android:textColor="@color/red"
+            />
+
+        <Button
+            android:id="@+id/certifibtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btndesign2"
+            android:text="인증"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/emailsendbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btndesign1"
+            android:text="이메일 전송하기"  />
+
+    </LinearLayout>
+
+</LinearLayout>

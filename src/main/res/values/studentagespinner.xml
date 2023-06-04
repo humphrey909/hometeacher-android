@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="studentage_array">
+        <item>사회인</item>
+        <item>대학생</item>
+        <item>n수생</item>
+        <item>고3</item>
+        <item>고2</item>
+        <item>고1</item>
+        <item>중3</item>
+        <item>중2</item>
+        <item>중1</item>
+        <item>초6</item>
+        <item>초5</item>
+        <item>초4</item>
+        <item>초3</item>
+        <item>초2</item>
+        <item>초1</item>
+    </string-array>
+</resources>

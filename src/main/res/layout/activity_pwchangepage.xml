@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Joinpage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="비밀번호 변경" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/newpwedit1text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 입력"
+            android:layout_marginBottom="5dp"
+            />
+        <EditText
+            android:id="@+id/newpwedit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="영문+숫자 조합 8자리 이상 입력해주세요."
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            />
+        <TextView
+            android:id="@+id/pw1chktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="영문+숫자+특수문자+조합 8자리 이상 입력해야합니다."
+            android:textColor="@color/red"
+            />
+        <TextView
+            android:id="@+id/newpwedit2text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 재입력"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/newpwedit2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 한번 더 입력해주세요."
+            android:gravity="left"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            />
+        <TextView
+            android:id="@+id/pw2chktext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="암호를 다시 확인해주세요."
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/pwchangebtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:background="@drawable/btndesign1"
+            android:text="변경하기"  />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/lineeraser"
+        app:showAsAction="withText"
+        android:icon="@drawable/menu"
+        android:title="선지우개"/>
+    <item
+        android:id="@+id/totaleraser"
+        app:showAsAction="withText"
+        android:icon="@drawable/menu"
+        android:title="전체지우개"/>
+
+</menu>

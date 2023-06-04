@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Linearclickbtn"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:background="@drawable/btndesign4"
+    android:layout_margin="5dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/listLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+    <TextView
+        android:id="@+id/documentinfo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:textColor="#3f3f3f"
+        android:textSize="13dp"
+        android:text="-"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:gravity="start|center"
+        tools:ignore="HardcodedText,SpUsage" />
+    <ImageView
+        android:id="@+id/menubtn"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:textColor="#3f3f3f"
+        android:src="@drawable/menu"
+        android:layout_gravity="end"
+        android:gravity="start"
+        tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nboardtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#979797"
+        android:textSize="13dp"
+        android:text="-"
+        android:maxLength="100"
+        android:maxLines="1"
+        android:layout_weight="1"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="start|center"
+        tools:ignore="HardcodedText,SpUsage" />
+
+</LinearLayout>

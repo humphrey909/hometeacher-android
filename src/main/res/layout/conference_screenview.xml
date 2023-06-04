@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout
+        android:id="@+id/local_video_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guestview"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameimg1"
+            android:src="@color/black">
+
+        </ImageView>
+    </FrameLayout>
+
+    <LinearLayout android:id="@+id/guestview"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/local_video_view_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+    <LinearLayout android:id="@+id/guestview_1"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/local_video_view_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+    <FrameLayout
+        android:id="@+id/local_video_view_container2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameimg2"
+            android:src="@color/black">
+
+        </ImageView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/local_video_view_container3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameimg3"
+            android:src="@color/black">
+
+        </ImageView>
+    </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/guestview_2"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/local_video_view_container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frameimg4"
+                android:src="@color/black">
+
+            </ImageView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/local_video_view_container5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:layout_weight="1"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/frameimg5"
+                android:src="@color/black">
+
+            </ImageView>
+        </FrameLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/screenRecyclerView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/local_video_view_container"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

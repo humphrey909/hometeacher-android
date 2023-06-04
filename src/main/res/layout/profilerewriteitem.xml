@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/reviewitem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/listLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/profilelinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardview_member"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="30dp">
+            <ImageView
+                android:id="@+id/mainprofileimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"
+                android:background="@drawable/imgdesign"
+                android:transitionName="pair_thumb"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/writername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="-" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/listLinear_stararea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <LinearLayout
+                android:id="@+id/listLinear_stararea_innertop1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/listLinear_stararea_inner1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/professional_text"
+                            android:layout_width="55dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="전문성" />
+
+
+                        <RatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:id="@+id/professional_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5"
+                            android:layout_gravity="center"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listLinear_stararea_inner2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/lecturepower_text"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="강의력" />
+
+
+                        <RatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:id="@+id/lecturepower_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5"
+                            android:layout_gravity="center"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listLinear_stararea_innertop2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+                <LinearLayout
+                    android:id="@+id/listLinear_stararea_inner3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lectureready_text"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="준비도" />
+
+
+                        <RatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:id="@+id/lectureready_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5"
+                            android:layout_gravity="center"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/listLinear_stararea_inner4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/lectureontime_text"
+                            android:layout_width="55dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="시간준수" />
+
+
+                        <RatingBar
+                            style="@style/Widget.AppCompat.RatingBar.Small"
+                            android:id="@+id/lectureontime_star"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:numStars="5"
+                            android:rating="0"
+                            android:stepSize="0.5"
+                            android:layout_gravity="center"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/menubtn"-->
+            <!--                android:layout_width="20dp"-->
+            <!--                android:layout_height="20dp"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:background="@drawable/menu"-->
+            <!--                />-->
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/listLinear_classinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+
+        <TextView
+            android:id="@+id/paymentinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="start"
+            android:text="-"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:paddingEnd="10dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/listLinear_classinfo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+        <TextView
+            android:id="@+id/startdateinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:text="-"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:id="@+id/regdateinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:gravity="end"
+            tools:ignore="SpUsage" />
+
+        <Button
+            android:id="@+id/menubtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/menu"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/documentinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3f3f3f"
+        android:textSize="13dp"
+        android:text="-"
+        android:gravity="start|center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="5dp"
+        android:background="#f2f3f6"/>
+</LinearLayout>

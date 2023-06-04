@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="마이페이지"
+            android:layout_gravity="start"
+            />
+    </androidx.appcompat.widget.Toolbar>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#aaa"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="80dp"
+            android:layout_width="match_parent"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_member"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+            <ImageView
+                android:id="@+id/profileimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/profile"
+                android:layout_gravity="center"
+                android:background="@drawable/imgdesign"
+               />
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text=""
+                    />
+
+                <TextView
+                    android:id="@+id/nametext"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="-"
+                    android:paddingStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/emailtext"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:text="-"
+                    android:paddingStart="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text=""/>
+
+            </LinearLayout>
+            <ImageButton
+                android:id="@+id/accontsetbtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/allow2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+
+                />
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#aaa"/>
+
+        <TextView
+            android:id="@+id/profilewritechktext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="프로필 작성여부"
+            android:layout_marginTop="10dp"
+            android:paddingStart="20dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:paddingStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/circleimg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/circle"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/alerttext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:text="프로필 작성이 완료되었습니다 :)"
+                android:layout_weight="6"/>
+
+            <ImageButton
+                android:id="@+id/profileviewbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/allow2"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#aaa"/>
+
+
+
+
+
+            <Switch
+                android:id="@+id/profileviewchkswitch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="과외 찾는 상태"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/profileviewchktitlelinear"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/profileviewchktitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:text="과외 구함 상태"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/profileviewchktext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btndesign4"
+                android:gravity="center"
+                android:text="미노출"
+                android:textSize="12dp"
+                android:layout_weight="3"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="30dp"
+            android:background="#e7e7e7"/>
+        <RadioGroup
+            android:id="@+id/profileviewchkgroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/profileviewchk1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="과외급함"
+                android:buttonTint="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|start"/>
+            <RadioButton
+
+                android:id="@+id/profileviewchk2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="생각중"
+                android:buttonTint="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|start"/>
+            <RadioButton
+                android:id="@+id/profileviewchk3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="생각없음"
+                android:buttonTint="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:gravity="center|start"/>
+        </RadioGroup>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="10dp"
+            android:background="#aaa"/>
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/myranktitletext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:gravity="start"-->
+<!--                android:text="내 멤버십 등급"-->
+<!--                android:layout_weight="1"-->
+<!--                />-->
+<!--            <Button-->
+<!--                android:id="@+id/rankguidebtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/btndesign3"-->
+<!--                android:gravity="center"-->
+<!--                android:text="등급안내"-->
+<!--                android:textSize="12dp"-->
+<!--                android:layout_weight="3"/>-->
+<!--        </LinearLayout>-->
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginHorizontal="30dp"-->
+<!--            android:background="#e7e7e7"/>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="horizontal">-->
+<!--            <TextView-->
+<!--                android:id="@+id/myranktext"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:background="@android:color/transparent"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Lv. 골드"-->
+<!--                android:layout_weight="1"-->
+<!--                android:paddingStart="20dp"/>-->
+
+
+<!--            <View-->
+<!--                android:layout_width="1dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginVertical="5dp"-->
+<!--                android:background="#e7e7e7"/>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+<!--                <TextView-->
+<!--                    android:id="@+id/myclasscnumtext"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="과외성사"-->
+<!--                    android:layout_weight="1"/>-->
+<!--                <TextView-->
+<!--                    android:id="@+id/myclasscnum"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="20건"-->
+<!--                    android:layout_weight="1"/>-->
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:background="#aaa"/>-->
+
+        <!--        <Button-->
+<!--            android:id="@+id/profileviewbtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingStart="20dp"-->
+<!--            android:text="프로필 설정" />-->
+        <Button
+            android:id="@+id/mynboardlistbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="커뮤니티 작성글/댓글" />
+
+        <Button
+            android:id="@+id/reviewlistbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="리뷰 작성 내역" />
+
+        <Button
+            android:id="@+id/paymentlistbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="결제 내역" />
+<!--        <Button-->
+<!--            android:id="@+id/servicecenterbtn"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/transparent"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:paddingStart="20dp"-->
+<!--            android:text="고객센터" />-->
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

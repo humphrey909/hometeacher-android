@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/paymentitem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/listLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+        <LinearLayout
+            android:id="@+id/profilelinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_member"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="30dp">
+                <ImageView
+                    android:id="@+id/mainprofileimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center"
+                    android:background="@drawable/imgdesign"
+                    android:transitionName="pair_thumb"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/writername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="-" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:id="@+id/listLinear_stararea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            >
+            <LinearLayout
+                android:id="@+id/listLinear_stararea2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/myclassname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/regdateinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/cancelregdateinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="-"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listLinear_stararea3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                >
+                <Button
+                    android:id="@+id/paymentcancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:background="@drawable/btndesign2"
+                    android:textColor="@color/white"
+                    android:text="환불 요청"
+                    />
+
+            </LinearLayout>
+
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/listLinear_classinfo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        >-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/paymentinfo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="start"-->
+<!--            android:text="-"-->
+<!--            android:textColor="#3f3f3f"-->
+<!--            android:textSize="12dp"-->
+<!--            android:paddingEnd="10dp"-->
+<!--            tools:ignore="HardcodedText,SpUsage" />-->
+
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/listLinear_classinfo2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        >-->
+<!--        <TextView-->
+<!--            android:id="@+id/startdateinfo"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="start"-->
+<!--            android:text="-"-->
+<!--            android:textColor="#3f3f3f"-->
+<!--            android:textSize="12dp"-->
+<!--            tools:ignore="SpUsage" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/regdateinfo"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="#3f3f3f"-->
+<!--            android:textSize="12dp"-->
+<!--            android:text="-"-->
+<!--            android:gravity="end"-->
+<!--            tools:ignore="SpUsage" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/menubtn"-->
+<!--            android:layout_width="20dp"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:background="@drawable/menu"-->
+<!--            />-->
+<!--    </LinearLayout>-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/documentinfo"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textColor="#3f3f3f"-->
+<!--        android:textSize="13dp"-->
+<!--        android:text="-"-->
+<!--        android:gravity="start|center"-->
+<!--        android:paddingTop="5dp"-->
+<!--        android:paddingBottom="5dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:layout_marginStart="10dp"-->
+<!--        tools:ignore="HardcodedText,SpUsage" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="5dp"
+        android:background="#f2f3f6"/>
+</LinearLayout>

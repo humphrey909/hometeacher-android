@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/requestclasslinear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_member"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="30dp">
+
+                <ImageView
+                    android:id="@+id/profileimg_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                >
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#3f3f3f"
+                    android:textSize="16dp"
+                    android:text="-"
+                    android:gravity="start|center"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/btndesign6"
+                    >
+                    <TextView
+                        android:id="@+id/chatdocument"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3f3f3f"
+                        android:textSize="16dp"
+                        android:text="-"
+                        android:gravity="start|center"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="end"
+                        android:layout_gravity="end|center"
+                        android:background="@drawable/btndesign6"
+                        >
+                    <TextView
+                        android:id="@+id/yesbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16dp"
+                        android:text="예"
+                        android:gravity="start|center"
+                        android:layout_marginEnd="10dp"
+                        />
+                    <TextView
+                        android:id="@+id/nobtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/maincolor"
+                        android:textSize="16dp"
+                        android:text="아니요"
+                        android:gravity="end|center"
+                        />
+
+                        <TextView
+                            android:id="@+id/endview"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/maincolor"
+                            android:textSize="16dp"
+                            android:text="-"
+                            android:gravity="end|center"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start"
+                    >
+                    <TextView
+                        android:id="@+id/readnum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3f3f3f"
+                        android:textSize="13dp"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        />
+                    <TextView
+                        android:id="@+id/chatregdate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="#3f3f3f"
+                        android:textSize="13dp"
+                        android:text="-"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

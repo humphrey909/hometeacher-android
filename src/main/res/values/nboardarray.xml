@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nboardarray">
+        <item>멘토링</item>
+        <item>선생님 토론</item>
+    </string-array>
+</resources>

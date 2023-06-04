@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile.Loginpage">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        tools:ignore="MissingConstraints">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="로그인" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HomeTeacher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/titleimg"
+        android:textSize="30dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintVertical_chainStyle="packed"
+
+        />
+
+    <ImageView
+        android:id="@+id/titleimg"
+        android:layout_width="296dp"
+        android:layout_height="236dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:srcCompat="@drawable/loginlogo" />
+
+
+
+    <TextView
+        android:id="@+id/idtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일"
+        app:layout_constraintStart_toStartOf="@+id/idedit"
+        app:layout_constraintBottom_toTopOf="@+id/idedit"
+        />
+    <EditText
+        android:id="@+id/idedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="example@hometeacher.com"
+        android:gravity="left"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.6"
+        android:background="@drawable/inputborder"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+    <TextView
+        android:id="@+id/emailchktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="이메일 형식이 유효하지 않습니다. "
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/idedit"
+        app:layout_constraintStart_toStartOf="@+id/idedit"
+        />
+
+    <TextView
+        android:id="@+id/pwtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호"
+        app:layout_constraintStart_toStartOf="@+id/pwedit"
+        app:layout_constraintBottom_toTopOf="@+id/pwedit"
+        />
+    <EditText
+        android:id="@+id/pwedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="비밀번호를 입력해주세요."
+        android:gravity="left"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:paddingStart="10dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="@+id/idedit"
+        app:layout_constraintStart_toStartOf="@+id/idedit"
+        app:layout_constraintTop_toBottomOf="@+id/idedit"
+        android:background="@drawable/inputborder"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        />
+    <TextView
+        android:id="@+id/pwchktext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호를 입력해 주세요."
+        android:textColor="@color/red"
+        app:layout_constraintTop_toBottomOf="@+id/pwedit"
+        app:layout_constraintStart_toStartOf="@+id/pwedit"
+        />
+
+
+    <ImageButton
+        android:id="@+id/loginbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/loginbtn"
+        app:layout_constraintTop_toBottomOf="@+id/pwedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        />
+
+    <TextView
+        android:id="@+id/loginbtntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        app:layout_constraintTop_toBottomOf="@+id/pwedit"
+        app:layout_constraintEnd_toStartOf="@+id/loginbtn"
+        app:layout_constraintBottom_toBottomOf="@+id/loginbtn"
+        android:textSize="20dp"
+        android:paddingEnd="20dp"
+        />
+
+    <Button
+        android:id="@+id/joingo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="회원가입"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nomeantext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:gravity="end|center"
+        />
+    <TextView
+        android:id="@+id/nomeantext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" / "
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        app:layout_constraintStart_toEndOf="@+id/joingo"
+        app:layout_constraintEnd_toStartOf="@+id/pwsearchgo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+    <Button
+        android:id="@+id/pwsearchgo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호 찾기"
+        app:layout_constraintStart_toEndOf="@+id/nomeantext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
+        android:background="@android:color/transparent"
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

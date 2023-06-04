@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/nboarditem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/documentinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#3f3f3f"
+        android:textSize="13dp"
+        android:text="-"
+        android:gravity="start|center"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+
+    <LinearLayout
+        android:id="@+id/listLinear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        >
+        <TextView
+            android:id="@+id/timeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:gravity="start"
+            tools:ignore="HardcodedText,SpUsage" />
+        <TextView
+            android:id="@+id/writeinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:gravity="start"
+            tools:ignore="SpUsage" />
+        <TextView
+            android:id="@+id/commentnum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#3f3f3f"
+            android:textSize="12dp"
+            android:text="-"
+            android:gravity="start"
+            tools:ignore="SpUsage" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginTop="5dp"
+        android:background="#f2f3f6"/>
+</LinearLayout>

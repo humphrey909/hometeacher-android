@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/btndesign6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="닉네임"
+            android:textSize="16dp"
+            android:gravity="center|start"
+            android:textColor="#000"
+            android:scaleType="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/nicnameedit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:hint="닉네임 입력"
+                android:textColor="@color/black"
+                android:src="@drawable/close"
+                android:background="@drawable/btndesign4"
+                android:scaleType="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/resetbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btndesign1"
+            android:text="초기화"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/paysearchcomplete"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btndesign2"
+            android:text="적용하기"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

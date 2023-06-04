@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassRequestformactivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarbox"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/view1"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/closetab"
+            android:layout_height="15dp"
+            android:layout_width="15dp"
+            android:layout_gravity="start"
+            android:src="@drawable/close2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+
+            />
+
+        <TextView
+            android:id="@+id/toolbartitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="과외 결제" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#aaa"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarbox"/>
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscrollbox"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/joinbtnlinear"
+        >
+
+
+    <LinearLayout
+        android:id="@+id/nboarditem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/view1"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/accountlinear"
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            android:paddingEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview_member"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:elevation="6dp"
+                app:cardCornerRadius="30dp"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <ImageView
+                    android:id="@+id/profilemainimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/profile"
+                    android:layout_gravity="center"
+                    android:background="@drawable/imgdesign"
+                    android:transitionName="pair_thumb"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="-"
+                    android:textSize="13dp"
+                    android:paddingStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/schoolinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:text="-"
+                    android:paddingStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/subjectinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textSize="13dp"
+                    android:text="-"
+                    android:paddingStart="20dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/paylinear"
+            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/profilepaytext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:text="예상 금액"/>
+            <TextView
+                android:id="@+id/profilepay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:textSize="13dp"
+                android:text="-"/>
+        </LinearLayout>
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aaa"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintTop_toBottomOf="@+id/toolbarbox"/>
+
+
+        <LinearLayout
+            android:id="@+id/negotiationpaylinear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            >
+        <TextView
+            android:id="@+id/negotiationpaytext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:text="과외 금액" />
+        <EditText
+            android:id="@+id/negotiationpayedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="선생님과 협의한 금액을 입력해주세요."
+            android:gravity="left"
+            android:ems="9"
+            android:inputType="numberDecimal"
+            tools:ignore="TextFields"
+            android:paddingStart="10dp"
+            android:background="@drawable/inputborder"
+            android:layout_marginBottom="5dp"
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/payalert1linear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/btndesign4"
+            >
+        <TextView
+            android:id="@+id/payalert1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textSize="15dp"
+            android:text="첫 결제 후 선생님과 매칭된 과외 방이 생성됩니다. 과외방에서 달마다 결제가 가능합니다. " />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/paymentmethodlinear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            >
+            <TextView
+                android:id="@+id/paymentmethodtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="결제수단" />
+
+            <RadioGroup
+                android:id="@+id/paymentmethodgroup"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+<!--                <RadioButton-->
+<!--                    android:id="@+id/paymentmethod1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="신용/체크카드"-->
+<!--                    android:buttonTint="@color/maincolor"-->
+<!--                    android:layout_marginBottom="5dp"-->
+<!--                    android:gravity="center|start"/>-->
+                <RadioButton
+
+                    android:id="@+id/paymentmethod2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="카카오페이"
+                    android:buttonTint="@color/maincolor"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center|start"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fixpaylinear"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/view1"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:id="@+id/fixpaytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="결제 금액" />
+            <LinearLayout
+                android:id="@+id/fixpaylinear_inner1"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/servicepaytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:layout_weight="1"
+                    android:text="서비스 금액" />
+                <TextView
+                    android:id="@+id/servicepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:layout_weight="1"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fixpaylinear_inner3"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/commissiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="start|center"
+                    android:layout_weight="1"
+                    android:text="수수료 3.5% 부가" />
+                <TextView
+                    android:id="@+id/commission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="end|center"
+                    android:layout_weight="1"
+                    android:text="-" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fixpaylinear_inner4"
+                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/view1"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/finalpaytext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="start|center"
+                    android:layout_weight="1"
+                    android:text="최종 결제금액" />
+                <TextView
+                    android:id="@+id/finalpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="end|center"
+                    android:layout_weight="1"
+                    android:text="-" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/joinbtnlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/paybootbtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/btndesign1"
+            android:text="결제하기"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

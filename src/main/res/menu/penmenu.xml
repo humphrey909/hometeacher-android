@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/blackbtn"
+        app:showAsAction="always"
+        android:icon="@drawable/blackbtn"
+        android:title="검정"/>
+    <item
+        android:id="@+id/redbtn"
+        app:showAsAction="always"
+        android:icon="@drawable/redbtn"
+        android:title="빨강"/>
+    <item
+        android:id="@+id/bluebtn"
+        app:showAsAction="always"
+        android:icon="@drawable/bluebtn"
+        android:title="파랑"/>
+    <item
+        android:id="@+id/yellowbtn"
+        app:showAsAction="always"
+        android:icon="@drawable/yellowbtn"
+        android:title="노랑"/>
+    <item
+        android:id="@+id/greenbtn"
+        app:showAsAction="always"
+        android:icon="@drawable/greenbtn"
+        android:title="초록"/>
+</menu>

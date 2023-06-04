@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile.Profileview">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/introductitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="한줄소개"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/introducedocu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gendertitle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="성별"
+            android:textColor="@color/maincolor"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:id="@+id/gendertext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:text="-"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/scooltitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="학교"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/schoolchk"
+                        android:layout_width="23dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textColor="@color/white"
+                        android:textSize="13dp"
+                        android:paddingTop="3dp"
+                        android:paddingBottom="3dp"
+                        android:text="-"
+                        android:background="@drawable/btndesign2"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        />
+                    <TextView
+                        android:id="@+id/schooldocu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:textColor="@color/black"
+                        android:text="-"
+                        android:layout_weight="7"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="5dp"
+                        />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/campusinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="@color/black"
+                    android:text="-"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/charactertitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="성격"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/characteredocu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subjecttitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="과목"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/monthpaytitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="수업료"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/monthpaydocu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/monthpaystandardtitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="수업료 기준"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/monthpaystandard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/subjectdocutitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="과외별 수업 내용"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/subjectdocu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/classstyletitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="과외 스타일"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/classstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/skillapealtitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="어필"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/skillapeal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/availabletimetitle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="과외 가능\n요일/시간"
+                android:textColor="@color/maincolor"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                />
+            <TextView
+                android:id="@+id/availabletime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:text="-"
+                android:layout_marginBottom="5dp"
+                />
+        </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/viewstitle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="조회수"
+            android:textColor="@color/maincolor"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:id="@+id/views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:text="-"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/liketitle"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="좋아요"
+            android:textColor="@color/maincolor"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="10dp"
+            />
+        <TextView
+            android:id="@+id/liketext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:text="-"
+            android:layout_marginBottom="5dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profileimgtxt"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="프로필 이미지"
+        android:textColor="@color/maincolor"
+        android:layout_marginBottom="5dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/imagesviewRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

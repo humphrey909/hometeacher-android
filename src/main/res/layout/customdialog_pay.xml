@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/transparent"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@drawable/btndesign6"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="수업료"
+            android:textSize="16dp"
+            android:gravity="center|start"
+            android:textColor="#000"
+            android:scaleType="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/minpayedit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:hint="최소 금액"
+                android:textColor="@color/black"
+                android:src="@drawable/close"
+                android:background="@drawable/btndesign4"
+                android:scaleType="center"/>
+
+                <TextView
+
+                    android:id="@+id/middletext"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=" ~ "
+                    android:textSize="12dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:scaleType="center"/>
+
+                <EditText
+                    android:id="@+id/maxpayedit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:textSize="15dp"
+                    android:hint="최소 금액"
+                    android:textColor="@color/black"
+                    android:src="@drawable/close"
+                    android:background="@drawable/btndesign4"
+                    android:scaleType="center"/>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/alerttext"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="최소 금액이 최대 금액보다 높아요"
+            android:textSize="14dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center|start"
+            android:textColor="@color/red"
+            android:scaleType="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/resetbtn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/btndesign1"
+            android:text="초기화"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/paysearchcomplete"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/btndesign2"
+            android:text="적용하기"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
